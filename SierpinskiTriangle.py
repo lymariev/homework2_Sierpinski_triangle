@@ -49,4 +49,4 @@ class SierpinskiTriangle:
 
     @staticmethod
     def calc_middle_point(start_point, finish_point):
-        return (start_point[0]+finish_point[0])/2, (start_point[1]+finish_point[1])/2
+        return (start_point[0]+finish_point[0])//2, (start_point[1]+finish_point[1])//2
