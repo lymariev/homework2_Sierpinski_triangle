@@ -37,7 +37,7 @@ class SierpinskiTriangle:
                                                degree - 1, drawing_tool)
 
     @staticmethod
-    def _draw_chaotic(coordinates, degree, drawing_tool):
+    def _draw_chaotic(coordinates, point_number, drawing_tool):
         drawing_tool.penup()
         drawing_tool.goto(coordinates[0][0], coordinates[0][1])
         drawing_tool.dot(2, 'black')
@@ -45,7 +45,7 @@ class SierpinskiTriangle:
         drawing_tool.dot(2, 'black')
         drawing_tool.goto(coordinates[2][0], coordinates[2][1])
         drawing_tool.dot(2, 'black')
-        for i in range(10000):
+        for i in range(point_number):
             px = drawing_tool.position()[0]
             py = drawing_tool.position()[1]
             random_number = random.randint(1, 3)
